@@ -1,0 +1,54 @@
+.wrap_range_slider
+	h2 
+		color: #676767
+		text-align: center
+		font-size: 2em
+		font-family: RobotoLight
+		margin: 30px 0px 40px 0px
+		@media all and (min-width: 300px) and (max-width: 320px)
+			font-size: 1.7em
+	.range_slider
+		background-color: #fff
+		padding: 25px 40px
+		overflow: hidden
+		@media all and (max-width: 1050px)
+			padding: 15px 20px
+		.wrap_items 
+			display: flex
+			flex-direction: column
+			.item
+				display: flex
+				justify-content: space-between
+				width: 100%
+				margin-bottom: 20px
+				@media all and (max-width: 870px)
+					flex-direction: column		
+				.name
+					align-self: flex-end
+					@media all and (max-width: 870px)
+						align-self: flex-start
+					p
+						padding-bottom: 10px
+						&:nth-of-type(1)
+							font-family: RobotoBold
+							font-size: 1.6em
+						&:nth-of-type(2)
+							font-family: RobotoLight
+							font-size: .9em
+							color: #818181
+				.slider 
+					width: 80%
+					@media all and (max-width: 870px)
+						width: 100%
+		.total
+			float: right
+			span
+				font-family: RobotoBold
+				font-size: 1.6em
+			em
+				font-style: normal
+				font-size: 1.4em
+			strong
+				font-style: normal
+				font-size: 1.6em
+				font-family: RobotoBold
